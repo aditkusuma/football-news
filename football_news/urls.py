@@ -22,6 +22,6 @@ def health(_): return HttpResponse("ok")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("main.urls")),  # ensure this exists; see step 2
+    # path("", include("main.urls")),   # TEMP: comment out
     path("health/", health),
 ]
